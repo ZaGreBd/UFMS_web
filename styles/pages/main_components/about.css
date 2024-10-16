@@ -1,0 +1,31 @@
+#me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    padding: 0 4vw;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 8px;
+
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.desc_item{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}

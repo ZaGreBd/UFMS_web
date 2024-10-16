@@ -1,0 +1,7 @@
+@import url(./main_components/about.css);
+@import url(./main_components/spotify.css);
+
+main{
+    display: flex;
+    flex-direction: column;
+}
