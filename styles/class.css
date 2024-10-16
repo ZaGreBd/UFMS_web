@@ -10,7 +10,7 @@
 }
 
 .section_end{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
     box-shadow: 0px 1px 59px 9px rgba(0,0,0,0.1);
 }
 
@@ -22,13 +22,27 @@
 
     text-align: center;
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
+
+    padding: 20px 0;
+
+    color: var(--card-color);
 }
 
 .subline{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--hover-color);
     border-radius: 50px;
 
     width: 5vw;
     min-width: 100px;
+}
+
+@media (min-width: 680px) {
+    .subtitle{
+        font-size: 1.7em;
+    }
+
+    .subline{
+        border-width: 6px;
+    }
 }

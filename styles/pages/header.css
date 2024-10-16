@@ -4,6 +4,9 @@ header{
     justify-content: center;
 
     padding: 20px;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .title{
@@ -24,4 +27,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+
+@media (min-width: 680px) {
+    .title{
+        font-size: 2.5em;
+    }
 }

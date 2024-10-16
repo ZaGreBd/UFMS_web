@@ -1,7 +1,13 @@
 @import url(./main_components/about.css);
 @import url(./main_components/spotify.css);
+@import url(./main_components/social.css);
 
 main{
     display: flex;
     flex-direction: column;
-}
+    gap: 40px;
+
+    padding: 20px 0 60px;
+
+    background-image: url("../../assets/background.png");
+    background-color: var(--thirty-color);

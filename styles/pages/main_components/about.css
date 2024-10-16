@@ -6,26 +6,154 @@
 
     padding: 0 4vw;
 }
+
+.banner figure{
+    display: flex;
+
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.banner img{
+    width: 100%;
+    max-height: 360px;
+}
+
+.photo_frame{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: -30%;
+}
+
+.photo_frame figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo_frame img{
+    width: 45vw;
+    max-width: 300px;
+}
+
+.card{
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+
+    background-color: var(--card-color);
+
+    overflow: hidden;
+}
+
 .description{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8px;
 
     padding: 8px;
+}
 
-    border: 1px solid black;
-    border-radius: 12px;
+.description span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.description p{
+    font-size: 1.4em;
+    font-weight: 500;
 }
 
 .desc_item{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 4px;
+    
+    text-align: center;
 }
 
-.hobbies{
+.desc_hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 8px;
+
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+}
+
+.hobbies_list{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+.hobbies_item{
+    border: 1px solid var(--secondary-color);
+    border-radius: 50px;
+
+    padding: 4px 12px;
+}
+
+@media (min-width: 680px) {
+    .card{
+        border-width: 4px;
+
+        min-height: 850px;
+        width: 650px;
+    }
+
+    .banner figure{
+        border-width: 4px;
+    }
+
+    .photo_frame figure{
+        border-width: 4px;
+    }
+
+    .description{
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .description span{
+        font-size: 1.7em;
+    }
+
+    .description p{
+        font-size: 1.6em;
+    }
+
+    .desc_item{
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .desc_hobbies{
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+
+        border-width: 4px;
+    }
+
+    .hobbies_list{
+        gap: 12px;
+    }
+
+    .hobbies_item{
+        border-width: 2px;
+        border-radius: 50px;
+
+        padding: 4px 12px;
+    }
 }

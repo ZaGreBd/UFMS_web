@@ -1,0 +1,20 @@
+#social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  padding: 0 4vw;
+}
+
+.media_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12%;
+}
+
+.media_item a svg{
+  width: 10vw;
+  max-width: 80px;
+}

@@ -6,3 +6,14 @@
 
     padding: 0 4vw;
 }
+
+.playlist{
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (min-width: 680px) {
+    .playlist iframe{
+        height: 400px;
+    }
+}
